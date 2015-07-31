@@ -1,7 +1,9 @@
-var staffNames = ["Donald Trump", "Rosie O'Donnell", "Leonardo", "Arthur", "Brunhilda", "Lancelot", "Bartholamewl"];
+var rand = require('./random');
+var staffNames = ["Donald", "Trump", "Rosie", "Donnell", "Leonardo", "Arthur", "Brunhilda", "Lancelot", "Bartholamew"];
+var someName = staffNames[Math.floor(Math.random() * staffNames.length)];
 
 var staffCreator = function () {
-    var name = staffNames[Math.floor(Math.random() * staffNames.length)];
+    var name = someName + rand(1,10000);
     return name;
 };
 

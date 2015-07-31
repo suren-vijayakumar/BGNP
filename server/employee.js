@@ -2,16 +2,11 @@ var staff = require('./staffgenerator');
 var skills = require('./skillsetgenerator');
 var scrum = require('./scrumgenerator');
 
+var empNew = {
+            name: staff(),
+            skills: skills(),
+            scrum: scrum()
+        };
 
-var newEmployee = function(){
-    var newEmp = {
-        name: staff(),
-        skills: skills(),
-        scrum: scrum()
-    };
-    console.log(newEmp);
 
-    return newEmp;
-
-};
- module.exports = newEmployee;
+ module.exports = empNew;

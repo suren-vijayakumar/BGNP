@@ -1,12 +1,7 @@
-var randomNumber = function (min, max) {
-    return Math.floor(Math.random() * (1 + max - min) + min);
-};
-
+var rand = require('./random');
 
 var scrumNumber= function() {
-
-    var scrum = randomNumber(1, 9);
-
+    var scrum = rand(1, 9);
     return scrum;
 };
 

@@ -1,7 +1,8 @@
+var rand = require('./random');
 var skillset = ["Front End", "Clientside Logic", "Serverside Logic"];
 
 var skillGenerator = function () {
-    return skillset[Math.floor(Math.random() * skillset.length)];
-}
+    return skillset[rand(0,2)];
+};
 
 module.exports = skillGenerator;

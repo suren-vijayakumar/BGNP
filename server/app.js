@@ -7,8 +7,8 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/data-request', function(request, response){
-    console.log("We are returning something");
-    response.json(newStaff());
+    console.log("New staff is " + newStaff);
+    response.json(newStaff);
     response.end();
 });
 
